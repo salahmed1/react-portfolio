@@ -1,0 +1,83 @@
+/* src/global.css */
+:root {
+  /* Keep all your CSS variables */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a2e;
+  --neon-cyan: #00ffff;
+  --neon-magenta: #ff00ff;
+  --neon-blue: #0080ff;
+  --neon-green: #00ff00;
+  --neon-purple: #8a2be2;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #888888;
+  --font-primary: 'Orbitron', 'Courier New', monospace;
+  --font-secondary: 'Saira', sans-serif;
+  --transition-fast: 0.3s ease;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+/* General Typography & Shared Components */
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-primary); }
+a { color: var(--neon-cyan); text-decoration: none; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+.btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--font-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.btn-primary {
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-blue));
+  color: var(--bg-primary);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+.btn-primary:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--neon-magenta);
+  border: 2px solid var(--neon-magenta);
+}
+.btn-secondary:hover {
+  background: var(--neon-magenta);
+  color: var(--bg-primary);
+}
+
+.neon-gradient {
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-magenta), var(--neon-blue));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keep keyframes global */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+/* ...and any other keyframes you want to share */

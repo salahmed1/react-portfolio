@@ -1,0 +1,140 @@
+{
+  "developer": {
+    "name" : "Mohamed SALAHDINE",
+    "title": "Full-Stack Developer & Digital Innovator",
+    "story": "My journey began with curiosity—wondering how digital experiences could feel more human, more intuitive. What started as late-night coding sessions in college evolved into a passion for creating web applications that don't just function, but inspire and delight users.",
+    "values": [
+      {
+        "title": "Innovation Enthusiast",
+        "description": "Always exploring cutting-edge technologies and pushing creative boundaries",
+        "icon": "⚡",
+        "color": "cyan"
+      },
+      {
+        "title": "Problem Solver",
+        "description": "Love tackling complex challenges and finding elegant solutions",
+        "icon": "🧩",
+        "color": "magenta"
+      },
+      {
+        "title": "Team Collaborator",
+        "description": "Believe the best solutions come from diverse perspectives working together",
+        "icon": "🤝",
+        "color": "electric-blue"
+      }
+    ],
+"timeline": [
+  {
+    "year": "2025 - 2026",
+    "role": "Technicien Spécialisé en Développement Informatique (Full-Stack Web Development)",
+    "company": "OFPPT",
+    "description": "Graduated from OFPPT as a specialized technician in full-stack web development. Gained solid skills in building complete web applications using modern technologies and agile methodologies.",
+    "technologies": ["React", "Laravel", "MongoDB", "Node.js", "UML", "Agile"],
+    "achievement": "Developed multiple full-stack projects integrating front-end and back-end technologies with clean architecture and teamwork collaboration."
+  },
+  {
+    "year": "2024 - 2025",
+    "role": "Trainee in Web Development Fundamentals",
+    "company": "OFPPT",
+    "description": "Completed foundational training in web development, focusing on the core principles of front-end and back-end development.",
+    "technologies": ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "PHP"],
+    "achievement": "Built several responsive and interactive web projects applying web standards and best practices."
+  }
+]
+
+  },
+  "skills": {
+    "Frontend": [
+      {"name": "JavaScript", "level": "Expert", "years": "6+", "category": "Frontend"},
+      {"name": "React.js", "level": "Expert", "years": "5+", "category": "Frontend"},
+      {"name": "Vue.js", "level": "Advanced", "years": "3+", "category": "Frontend"},
+      {"name": "TypeScript", "level": "Advanced", "years": "4+", "category": "Frontend"},
+      {"name": "CSS3/SASS", "level": "Expert", "years": "6+", "category": "Frontend"},
+      {"name": "HTML5", "level": "Expert", "years": "6+", "category": "Frontend"},
+      {"name": "Next.js", "level": "Advanced", "years": "3+", "category": "Frontend"},
+      {"name": "Tailwind CSS", "level": "Advanced", "years": "2+", "category": "Frontend"}
+    ],
+    "Backend": [
+      {"name": "Node.js", "level": "Expert", "years": "5+", "category": "Backend"},
+      {"name": "Python", "level": "Advanced", "years": "4+", "category": "Backend"},
+      {"name": "Express.js", "level": "Advanced", "years": "4+", "category": "Backend"},
+      {"name": "MongoDB", "level": "Advanced", "years": "3+", "category": "Backend"},
+      {"name": "PostgreSQL", "level": "Advanced", "years": "3+", "category": "Backend"},
+      {"name": "GraphQL", "level": "Proficient", "years": "2+", "category": "Backend"},
+      {"name": "Redis", "level": "Proficient", "years": "2+", "category": "Backend"},
+      {"name": "REST APIs", "level": "Expert", "years": "5+", "category": "Backend"}
+    ],
+    "Tools & Technologies": [
+      {"name": "Git/GitHub"},
+      {"name": "Docker"},
+      {"name": "AWS"},
+      {"name": "Webpack"},
+      {"name": "Jest"},
+      {"name": "Three.js"},
+      {"name": "Figma"},
+      {"name": "VS Code"}
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "NeuroSpace VR Platform",
+      "description": "An immersive VR learning platform built with WebXR and Three.js, featuring real-time collaboration and AI-powered content generation.",
+      "image": "https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?w=600&h=400&fit=crop",
+      "technologies": ["React", "Three.js", "WebXR", "Node.js", "AI/ML"],
+      "liveUrl": "#",
+      "sourceUrl": "#"
+    },
+    {
+      "id": 2,
+      "title": "CryptoTrade Dashboard",
+      "description": "Real-time cryptocurrency trading dashboard with advanced analytics, portfolio management, and automated trading strategies.",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop",
+      "technologies": ["Vue.js", "D3.js", "WebSocket", "Python", "PostgreSQL"],
+      "liveUrl": "#",
+      "sourceUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "AI-Powered Code Assistant",
+      "description": "An intelligent code completion and review tool powered by machine learning, integrated with popular IDEs and code editors.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
+      "technologies": ["TypeScript", "Python", "TensorFlow", "VSCode API", "Docker"],
+      "liveUrl": "#",
+      "sourceUrl": "#"
+    },
+    {
+      "id": 4,
+      "title": "Smart IoT Home Hub",
+      "description": "Centralized home automation system with voice control, energy monitoring, and predictive maintenance using IoT sensors.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop",
+      "technologies": ["React Native", "IoT", "MQTT", "Node.js", "MongoDB"],
+      "liveUrl": "#",
+      "sourceUrl": "#"
+    },
+    {
+      "id": 5,
+      "title": "Blockchain Supply Chain",
+      "description": "Transparent supply chain management system built on Ethereum, ensuring product authenticity and tracking from origin to consumer.",
+      "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop",
+      "technologies": ["Solidity", "Web3.js", "React", "IPFS", "Ethereum"],
+      "liveUrl": "#",
+      "sourceUrl": "#"
+    },
+    {
+      "id": 6,
+      "title": "Neural Network Visualizer",
+      "description": "Interactive 3D visualization tool for understanding and debugging neural network architectures with real-time training visualization.",
+      "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
+      "technologies": ["Three.js", "TensorFlow.js", "WebGL", "D3.js", "Python"],
+      "liveUrl": "#",
+      "sourceUrl": "#"
+    }
+  ],
+  "socialLinks": [
+    {"name": "GitHub", "url": "https://github.com/salahmed1/", "icon": "<i class='fa-brands fa-github'></i>"},
+    {"name": "LinkedIn", "url": "https://www.linkedin.com/in/mohamed-salahdine/", "icon": "<i class='fa-brands fa-linkedin-in'></i>"},
+    {"name": "Twitter", "url": "https://x.com/salahmed111", "icon": "<i class='fa-brands fa-x-twitter'></i>"},
+    {"name": "Email", "url": "mailto:salahmed.official@email.com", "icon": "<i class='fa-solid fa-envelope'></i>"}
+  ]
+}

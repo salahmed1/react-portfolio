@@ -1,0 +1,67 @@
+.journeySection { margin-bottom: 6rem; position: relative; z-index: 2; }
+
+.sectionSubtitle {
+  font-family: var(--font-primary); font-size: 1.8rem; margin-bottom: 3rem;
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  position: relative; color: var(--neon-cyan);
+}
+
+.subtitleLine {
+  position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+  width: 200px; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+  box-shadow: 0 0 10px var(--neon-cyan);
+}
+
+.timelineContainer { position: relative; max-width: 800px; margin: 0 auto; padding: 2rem 0; }
+.timelineLine {
+  position: absolute; left: 50%; top: 0; bottom: 0; width: 3px;
+  background: linear-gradient(to bottom, var(--neon-cyan), var(--neon-magenta), var(--neon-blue));
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+.timelineContent { position: relative; }
+.timelineItem {
+  display: flex; margin-bottom: 3rem; position: relative;
+  align-items: flex-start; width: 100%;
+}
+.timelineItem:nth-child(even) { flex-direction: row-reverse; }
+.timelineNode {
+  position: absolute; left: 50%; top: 20px; width: 20px; height: 20px;
+  background: var(--neon-cyan); border-radius: 50%;
+  transform: translateX(-50%); z-index: 3;
+  box-shadow: 0 0 20px var(--neon-cyan);
+  transition: all var(--transition-fast);
+}
+.timelineNode:hover { transform: translateX(-50%) scale(1.5); }
+.timelineCard {
+  background: rgba(26, 26, 46, 0.8);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px; padding: 2rem;
+  width: calc(50% - 40px);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-fast);
+}
+.timelineCard:hover { transform: scale(1.03); border-color: var(--neon-cyan); }
+.timelineYear { font-family: var(--font-primary); font-size: 1.2rem; color: var(--neon-cyan); margin-bottom: 0.5rem; }
+.timelineRole { font-size: 1.5rem; color: var(--text-primary); margin-bottom: 0.5rem; }
+.timelineCompany { color: var(--neon-magenta); font-size: 0.9rem; margin-bottom: 1rem; }
+.timelineDescription { color: var(--text-secondary); margin-bottom: 1rem; }
+.timelineTech { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.techTag {
+  font-family: var(--font-mono); font-size: 0.85rem; padding: 0.25rem 0.75rem;
+  background: rgba(0, 128, 255, 0.2); border: 1px solid var(--neon-blue);
+  border-radius: 15px; color: var(--neon-blue);
+}
+.timelineAchievement { color: var(--neon-green); font-weight: 600; font-size: 0.9rem; margin-top: 1rem; }
+
+@media (max-width: 768px) {
+  .timelineLine { left: 20px; transform: none; }
+  .timelineItem, .timelineItem:nth-child(even) {
+    flex-direction: row !important;
+    padding-left: 45px;
+    justify-content: flex-start;
+  }
+  .timelineCard { width: 100%; }
+  .timelineNode { left: 20px; }
+}

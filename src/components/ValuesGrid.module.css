@@ -1,0 +1,38 @@
+.personalitySection { margin-bottom: 6rem; position: relative; z-index: 2; }
+.sectionSubtitle {
+  font-family: var(--font-primary); font-size: 1.8rem; margin-bottom: 3rem;
+  display: flex; align-items: center; justify-content: center; gap: 1rem;
+  position: relative; color: var(--neon-magenta);
+}
+.subtitleLine {
+  position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+  width: 200px; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--neon-magenta), transparent);
+  box-shadow: 0 0 10px var(--neon-magenta);
+}
+
+.personalityGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.personalityCard {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  transition: all var(--transition-fast);
+  overflow: hidden;
+}
+.personalityCard:hover { transform: translateY(-10px); }
+.personalityIcon { font-size: 3rem; margin-bottom: 1rem; filter: drop-shadow(0 0 10px currentColor); }
+.personalityTitle { font-size: 1.3rem; margin-bottom: 1rem; color: var(--text-primary); }
+.personalityDescription { color: var(--text-secondary); }
+
+/* Color-specific hover effects */
+.cyan:hover { border-color: var(--neon-cyan); box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2); }
+.magenta:hover { border-color: var(--neon-magenta); box-shadow: 0 10px 30px rgba(255, 0, 255, 0.2); }
+.electric-blue:hover { border-color: var(--neon-blue); box-shadow: 0 10px 30px rgba(0, 128, 255, 0.2); }
+.purple:hover { border-color: var(--neon-purple); box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2); }

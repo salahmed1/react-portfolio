@@ -1,0 +1,86 @@
+.aboutHero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.profileImageWrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+  transform-style: preserve-3d;
+}
+
+.profileImageWrapper:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 25px 60px rgba(0, 255, 255, 0.2), 0 0 20px rgba(255, 0, 255, 0.2);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  position: relative;
+  z-index: 5;
+}
+
+.profileImageWrapper::before,
+.profileImageWrapper::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.profileImageWrapper::before {
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.15) 0%, rgba(0, 255, 255, 0) 65%);
+  z-index: 1;
+}
+
+.profileImageWrapper::after {
+  top: -15px; left: -15px; right: -15px; bottom: -15px;
+  border: 2px solid transparent;
+  border-top-color: var(--neon-cyan);
+  border-left-color: var(--neon-cyan);
+  border-bottom-color: var(--neon-magenta);
+  animation: rotate-border 4s linear infinite;
+  z-index: 2;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 8px var(--neon-cyan));
+}
+
+.aboutIntro { text-align: left; }
+.aboutTitle { font-size: 2.5rem; margin-bottom: 1rem; }
+.aboutSubtitle { font-family: var(--font-secondary); font-size: 1.3rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--neon-magenta); }
+.aboutHook { font-size: 1.1rem; margin-bottom: 2rem; color: var(--text-secondary); }
+.neonCyan { color: var(--neon-cyan); }
+
+@keyframes rotate-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .aboutHero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  .aboutIntro { text-align: center; }
+  .profileImageWrapper { width: 200px; height: 200px; }
+  .aboutTitle { font-size: 2rem; }
+}

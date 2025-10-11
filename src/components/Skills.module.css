@@ -1,0 +1,83 @@
+.skillsSection {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+}
+
+.sectionTitle {
+  font-family: var(--font-primary);
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skillsCategories {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+.categoryTitle {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Category-specific colors */
+.categoryTitle.frontend {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 15px var(--neon-cyan);
+}
+.categoryTitle.backend {
+  color: var(--neon-magenta);
+  text-shadow: 0 0 15px var(--neon-magenta);
+}
+.categoryTitle.tools {
+  color: var(--neon-blue);
+  text-shadow: 0 0 15px var(--neon-blue);
+}
+
+.skillsConstellation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skillBadge {
+  padding: 12px 24px;
+  background: rgba(17, 17, 17, 0.9);
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent; /* Base border */
+}
+
+.skillBadge:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* Category-specific border and shadow styles */
+.skillsCategory[data-category="Frontend"] .skillBadge {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+.skillsCategory[data-category="Backend"] .skillBadge {
+  border-color: var(--neon-magenta);
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+}
+.skillsCategory[data-category="Tools & Technologies"] .skillBadge {
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 25px rgba(0, 128, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skillsSection { padding: 80px 0; }
+  .sectionTitle { font-size: 2.8rem; }
+}
