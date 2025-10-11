@@ -6,8 +6,7 @@ const AboutIntro = ({ name, title, story }) => {
         <div className={styles.aboutHero}>
             <div className={styles.profileContainer}>
                 <div className={styles.profileImageWrapper}>
-                    <img src="/profilePicture.png" alt={name} className={styles.profileImage} />
-                </div>
+                    <img src={`${import.meta.env.BASE_URL}profile-pic.jpg`} alt={name} className={styles.profileImage} />                </div>
             </div>
             <div className={styles.aboutIntro}>
                 <h3 className={styles.aboutTitle}>Greetings, I'm <span className={styles.neonCyan}>{name}</span></h3>
