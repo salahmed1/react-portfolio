@@ -23,7 +23,7 @@ function App() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('/data.json');
+                const response = await fetch(`${import.meta.env.BASE_URL}data.json`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
