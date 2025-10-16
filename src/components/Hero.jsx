@@ -79,7 +79,7 @@ const Hero = ({ data }) => {
                     <a 
                         href={cvUrl} 
                         className="btn btn-secondary"
-                        download="Salah_M_CV.pdf"
+                        download="cv.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
