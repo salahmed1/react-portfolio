@@ -1,13 +1,11 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import styles from './Hero.module.css'; // Import the CSS Module
+import styles from './Hero.module.css';
 
 // --- Sub-Component for the Typing Effect ---
 const TypingEffect = ({ title, textsToType }) => {
     const [text, setText] = useState('');
     const [index, setIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-
-    // useMemo ensures this list isn't recreated on every render
     const fullTextList = useMemo(() => [title, ...textsToType], [title, textsToType]);
 
     useEffect(() => {
@@ -59,6 +57,9 @@ const Hero = ({ data }) => {
         "Transforming Ideas into Reality"
     ];
 
+    // Construct the correct URL for the CV file
+    const cvUrl = `${import.meta.env.BASE_URL}cv.pdf`;
+
     return (
         <section className={styles.hero} id="home">
             <div className={styles.heroBg} style={{ transform: `translateY(${offsetY * 0.5}px)` }}></div>
@@ -74,9 +75,16 @@ const Hero = ({ data }) => {
                 <p className={styles.heroTagline}>{data.tagline}</p>
                 
                 <div className={styles.heroButtons}>
-                    {/* These buttons use global classes from global.css */}
                     <a href="#projects" className="btn btn-primary">View My Work</a>
-                    <a href="#contact" className="btn btn-secondary">Get In Touch</a>
+                    <a 
+                        href={cvUrl} 
+                        className="btn btn-secondary"
+                        download="Salah_M_CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Download CV
+                    </a>
                 </div>
             </div>
 
