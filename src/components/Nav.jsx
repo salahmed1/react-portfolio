@@ -55,7 +55,7 @@ const Nav = () => {
                             <a
                                 href={cvUrl}
                                 className={styles.navLinkCv}
-                                download="Salah_M_CV.pdf"
+                                download="cv.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
