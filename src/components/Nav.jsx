@@ -28,7 +28,7 @@ const Nav = () => {
     const navLinks = ['home', 'about', 'projects', 'skills', 'contact'];
     
     // Construct the correct URL for the CV file
-    const cvUrl = `${import.meta.env.BASE_URL}cv.pdf`;
+    const cvUrl = `${import.meta.env.BASE_URL}CV_Mohamed_SALAHDINE_Developpeur.pdf`;
 
     return (
         <nav className={styles.nav}>
@@ -55,7 +55,7 @@ const Nav = () => {
                             <a
                                 href={cvUrl}
                                 className={styles.navLinkCv}
-                                download="cv.pdf"
+                                download="CV_Mohamed_SALAHDINE_Developpeur.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
